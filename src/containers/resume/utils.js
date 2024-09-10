@@ -14,12 +14,12 @@ export const data={
     ],
     education:[
         {
-            title:"B.Tech(CSE) -",
-            subTitle:" Sphoorthy Engineering College,Hyderabad",
+            title:"B.Tech(CSE)-",
+            subTitle:"  Sphoorthy Engineering College,Hyderabad",
             description:"2017-2022, CGPA:6.42"
         },
         {
-            title:"Intermediate(M.P.C)-",
+            title:"XII(MPC)-",
             subTitle:" Narayana Junior College,Hyderabad",
             description:"2015-2017, PERCENTAGE:83.7%"
         },

@@ -1,18 +1,22 @@
-.resume{
+/* Default (Desktop) Styling */
+.resume {
     height: 100%;
 }
-.timeline{
+
+.timeline {
     display: flex;
     width: 100%;
     padding: 20px;
-    &__experience,&__education{
+
+    &__experience,
+    &__education {
         display: flex;
         flex-direction: column;
         width: 50%;
         padding: 2rem;
         align-items: center;
-        &__header-text{
 
+        &__header-text {
             display: inline-block;
             color: var(--yellow-theme-sub-text-color);
             font-size: 22px;
@@ -24,52 +28,187 @@
             padding: 5px 10px;
             border-bottom: 2px solid var(--yellow-theme-main-color);
 
-           
-        }
-        &__header-text::before, &__header-text::after{
-            position: absolute;
-            width: 2px;
-            content: ' ';
-            height: 5px;
-            background-color: var(--yellow-theme-main-color);
-            bottom: -1px;
+            &::before,
+            &::after {
+                position: absolute;
+                width: 2px;
+                content: ' ';
+                height: 5px;
+                background-color: var(--yellow-theme-main-color);
+                bottom: -1px;
+            }
 
+            &::before {
+                left: 0;
+            }
+
+            &::after {
+                right: 0;
+            }
         }
-        &__header-text::before{
-            left: 0;
-        }
-        &__header-text::after{
-            right: 0;
-        }
-        &__vertical-timeline-element{
-            padding: 0px 0px 30px 0px;
-            &:last-child{
-                padding-bottom: 0px;
+
+        &__vertical-timeline-element {
+            padding: 0 0 30px;
+
+            &:last-child {
+                padding-bottom: 0;
             }
         }
     }
 
-    .vertical-timeline-element-title-wrapper{
+    .vertical-timeline-element-title-wrapper {
         display: flex;
         align-items: center;
-        h3,h4{
-            font-size: 16px;
-        }
-        h4{
-            margin-left: 8px;
-        }
-        p{
+        width: 100%;
+
+        h3, h4 {
             font-size: 18px;
         }
-       
+
+        h4 {
+            padding-top: 5px;
+            padding-right: 5px;
         }
-        .vertical-timeline-element-content{
-            box-shadow: none;
+
+        p {
+            font-size: 18px;
+        }
     }
-    .vertical-timeline-element-content-arrow{
+
+    .vertical-timeline-element-content {
+        box-shadow: none;
+    }
+
+    .vertical-timeline-element-content-arrow {
         display: none;
+    }
+
+    .vertical-timeline-element-title-wrapper-description {
+        font-size: 18px;
+    }
+
+    &__education {
+        display: flex;
+    }
 }
-.vertical-timeline-element-title-wrapper-description{
-    font-size: 18px;
+
+/* Mobile View (300px to 500px) */
+@media screen and (max-width: 500px) {
+    .resume {
+        height: 100%;
+    }
+    
+    .timeline {
+        display: flex;
+        width: 100%;
+        padding: 10px; /* Reduced padding for smaller screens */
+    
+        &__experience,
+        &__education {
+            flex-direction: column;
+            width: 100%; /* Full width for smaller screens */
+            padding: 1rem;
+            align-items: center;
+        }
+
+        &__experience__vertical-timeline-element,
+        &__education__vertical-timeline-element {
+            padding: 0 0 10px;
+            margin-left: 0;
+        }
+
+        .vertical-timeline-element-title-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 100%; /* Full width for smaller screens */
+        }
+        
+        .vertical-timeline-element-title-wrapper h3, 
+        .vertical-timeline-element-title-wrapper h4 {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .vertical-timeline-element-title-wrapper-description {
+            font-size: 10px;
+        }
+    }
 }
+
+/* Mobile View (500px to 980px) */
+@media screen and (min-width: 500px) and (max-width: 980px) {
+    .timeline {
+        &__experience,
+        &__education {
+            padding: 1rem;
+            align-items: center;
+
+            &__header-text {
+                font-size: 22px;
+                letter-spacing: 0.3px;
+                padding: 10px 5px;
+            }
+
+            &__vertical-timeline-element {
+                padding: 0 0 20px; /* Reduced gap for smaller screens */
+                
+                &:last-child {
+                    padding-bottom: 0;
+                }
+
+                .vertical-timeline-element-title-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%; /* Full width for medium screens */
+                    
+                    h3, h4 {
+                        font-size: 16px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    .vertical-timeline-element-title-wrapper-description {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Tablet View (990px to 1024px) */
+@media screen and (min-width: 990px) and (max-width: 1024px) {
+    .timeline {
+        &__experience,
+        &__education {
+            padding: 2rem;
+
+            &__header-text {
+                font-size: 22px;
+            }
+
+            &__vertical-timeline-element {
+                padding: 0 0 30px;
+
+                .vertical-timeline-element-title-wrapper {
+                    h3, h4 {
+                        font-size: 14px;
+                    }
+
+                    h4 {
+                        margin-left: 10px;
+                    }
+
+                    .vertical-timeline-element-title-wrapper-description {
+                        font-size: 12px; /* Adjusted to be more readable on tablets */
+                    }
+                }
+            }
+        }
+    }
 }

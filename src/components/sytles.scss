@@ -12,7 +12,7 @@
         align-items: center;
         width: 100%;
         height: inherit;
-        padding: 0 20px;
+        padding: 0 10px;
         flex: 1;
         &__logo{
             color: var( --yellow-theme-main-color);
@@ -27,7 +27,8 @@
             &__item{
                 line-height: 40px;
                 margin-right: 1.5rem;
-                font-size: 1.6rem;
+                font-size: 1.5rem;
+                padding-top: 20px;
 
                 &::after{
                     content: '';
@@ -55,96 +56,150 @@
    
     
 }
-
-@media  only screen  and (max-width:768px) {
-   
-    .navbar{
-    background-color: var(  --yellow-theme-nav-background-color);
-    height:80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-
-    &__container{
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .navbar {
+        background-color: var(--yellow-theme-nav-background-color);
+        height: 190px;
         display: flex;
-        
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+        position: sticky;
+        top: 0; /* Ensure sticky works correctly */
+        z-index: 1000; /* Make sure navbar is on top */
+    }
+
+    .navbar__container {
+        display: flex;
         width: 100%;
         height: inherit;
-        padding: 0 20px;
+        padding: 10px 0; /* Padding adjusted for mobile view */
         flex: 1;
-        
-        
-        &__logo{
-            color: var( --yellow-theme-main-color);
-            cursor: pointer;
-        }
-        &__menu{
-            
-             display: none;
-            flex-direction: column;
-            justify-content: space-between;
-            list-style: none;
-            text-align: center;
-            margin-top: 18%;
-            z-index: 1;
-          
-            margin-right: 10%;
-           &.active{
-            display: block;
-           
-           }
-
-            &__item{
-               
-                line-height: 15px;
-               
-               flex-direction: column;
-                font-size: 1.5rem;
-                display: flex;
-               padding-top: 2px;
-              
-              right: 0px;
-                
-                
-                
-
-                &::after{
-                    content: '';
-                    display: block;
-                    height: 3px;
-                    width: 0;
-                    background: transparent;
-                    transition: all 0.5s ease;
-                }
-                &:hover::after{
-                    width: 100%;
-                    background: var(--yellow-theme-main-color);
-
-                }
-                
-            }
-            &_links{
-                color: var(--yellow-theme-main-color);
-                text-decoration: none;
-                padding: 0.5rem;
-            }
-            
-        }
-
-       
+        position: relative; /* Ensure positioning for child elements */
     }
-    .nav-icon{
-    display: block;
-   
-    
-}
-svg{
-    color:var(--yellow-theme-main-color);
-    margin-left: -50%;
-}
-   
-}
 
-} 
+    .navbar__container__logo {
+        color: var(--yellow-theme-main-color);
+        cursor: pointer;
+    }
+
+    .navbar__container__menu {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1%;
+        padding-top: 20px;
+        margin-right: 2%;
+         /* Absolute positioning for dropdown */
+        top: 100%; /* Position below the navbar */
+        left: 0;
+        right: 0;
+        background-color: var(--yellow-theme-nav-background-color); /* Match background */
+        z-index: 1;
+
+        &.active {
+            display: flex;
+        }
+
+        &__item {
+            line-height: 5px;
+            font-size: 1.0rem;
+            display: flex;
+            flex-direction: row;
+            padding: 2px;
+            position: relative; /* Ensure pseudo-element is positioned correctly */
+            text-align: center; /* Center text for better alignment */
+
+            &::after {
+                content: '';
+                display: block;
+                height: 2px; /* Adjust height for the underline */
+                width: 0;
+                background: var(--yellow-theme-main-color); /* Underline color */
+                transition: width 0.3s ease; /* Smooth transition effect */
+                position: absolute; /* Absolute positioning within the item */
+                bottom: 0; /* Align with the bottom of the item */
+                left: 0;
+            }
+
+            &:hover::after {
+                width: 100%; /* Full width underline on hover */
+            }
+        }
+
+        &__links {
+            color: var(--yellow-theme-main-color);
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+    svg {
+        color: var(--yellow-theme-main-color);
+        margin-left: -50%;
+    }
+}
+@media  only screen and (min-width:670px) and (max-width:800px) {
+    .navbar{
+        background-color: var(  --yellow-theme-nav-background-color);
+        height:80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+        position: sticky;
+    
+        &__container{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: inherit;
+            padding: 0 10px;
+            flex: 1;
+            &__logo{
+                color: var( --yellow-theme-main-color);
+                cursor: pointer;
+            }
+    
+            &__menu{
+                display: flex;
+                list-style: none;
+                text-align: center;
+    
+                &__item{
+                    line-height: 40px;
+                    margin-right: 1.5rem;
+                    font-size: 1.5rem;
+                    padding-top: 20px;
+    
+                    &::after{
+                        content: '';
+                        display: block;
+                        height: 3px;
+                        width: 0;
+                        background: transparent;
+                        transition: all 0.5s ease;
+                    }
+                    &:hover::after{
+                        width: 100%;
+                        background: var(--yellow-theme-main-color);
+    
+                    }
+                    
+                }
+                &_links{
+                    color: var(--yellow-theme-main-color);
+                    text-decoration: none;
+                    padding: 0.5rem;
+                }
+            }
+        }
+      
+       
+        
+    }
+}

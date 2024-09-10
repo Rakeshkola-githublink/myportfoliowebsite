@@ -3,42 +3,34 @@ import { MdWorkHistory } from "react-icons/md";
 import PageHeaderContent from '../../pageHeaderContent'
 
 import { useState } from 'react'
-import imageOne from '../../images/ecommerce.jpg'
-import imageTwo from '../../images/webdevelopment.jpg'
-import imageThree from '../../images/socialmedia.jpg'
+import imageOne from '../../images/Social Media website.png'
+import imageTwo from '../../images/Food Delivery website.png'
+import imageThree from '../../images/my portfolio.png'
 import './styles.scss'
 
 const portfolioData = [
   {
     id: 2,
-    name: "Ecommerce",
-    image: imageOne
-  },
-  {
-    id: 2,
-    name: "Web Development",
-    image: imageTwo
-  },
-  {
-    id: 2,
-    name: "Social media",
-    image: imageThree
-  },
-
-  {
-    id: 3,
     name: "Social Media",
-    image: imageTwo
-
-
+    image: imageOne,
+    link:"https://github.com/Rakeshkola-githublink/Social-Media"
   },
   {
-    id: 3,
-    name: "Design",
-    image: imageOne
-
-
+    id: 2,
+    name: "Food Delivery",
+    image: imageTwo,
+    link:"https://github.com/Rakeshkola-githublink/Food-Delivery-website"
   },
+  {
+    id: 2,
+    name: " Portfolio",
+    image: imageThree,
+    link:"https://github.com/Rakeshkola-githublink/My-Portfolio"
+  }
+
+ 
+  
+   
 
 
 ]
@@ -116,7 +108,7 @@ const Portfolio = () => {
                     index=== hoveredValue &&(
                       <div>
                         <p>{item.name}</p>
-                        <button>Visit</button>
+                        <button onClick={() => window.open(item.link, '_blank')}>Visit</button>
                       </div>
                     )
                   }

@@ -71,22 +71,192 @@
 
     
 }
-@media  only screen and (min-width:551px) and (max-width:768px) {
+@media  only screen  and (min-width:360px)and (max-width:500px) {
    
     .home_text-wrapper h1{
         font-size: 4rem;
         line-height: 6rem;
         
-       
+        &_text-wrapper{
+            display: flex;
+            justify-content: center;
+        align-items: center;
+            position: absolute;
+            margin-top:-400px;
+          
+    
         
+            h1{
+                color:var(--yellow-theme-main-color);
+                margin: 0 ;
+                position: relative;
+                line-height: 10rem;
+                font-weight: 500;
+                font-size: 8rem;
+                overflow: hidden;
+                white-space: nowrap;
+                animation: typingEffectAnimation 2.5s steps(30,end) ;
+              
+              
+    
+            }
+           
+           
+        }
+    
+        &__contact-me{
+            display: flex;
+          justify-content: center;
+           
+            margin-top: -100px;
+            button{
+                background: transparent;
+                font-size: 2rem;
+                color:var(--yellow-theme-main-color);
+                cursor: pointer;
+                border: 1.5px solid var(--yellow-theme-main-color);
+                padding: 10px 70px;
+                border-radius: 4px;
+                font-weight: 500;
+                margin-left: -300px;
+    
+                &:hover{
+                    background: var(--yellow-theme-main-color);
+                    color:#000000;
+                }
+            }
+        }
+    
     }
+    
+        
+    
     
 
 }
-@media  only screen and (min-width:769px) and (max-width:990px) {
-    home_text-wrapper h1{
-        font-size: 6rem;
-        line-height: 8rem;
+@media  only screen and (min-width:700px) and (max-width:990px) {
+    .home{
+        position: relative;
+        color:white;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+       
+      
+        &_text-wrapper{
+            display: flex;
+            justify-content: center;
+        align-items: center;
+            position: absolute;
+            margin-top:-400px;
+          
+    
+        
+            h1{
+                color:var(--yellow-theme-main-color);
+                margin: 0 ;
+                position: relative;
+                line-height: 10rem;
+                font-weight: 500;
+                font-size: 8rem;
+                overflow: hidden;
+                white-space: nowrap;
+                animation: typingEffectAnimation 2.5s steps(30,end) ;
+              
+              
+    
+            }
+           
+           
+        }
+    
+        &__contact-me{
+            display: flex;
+          justify-content: center;
+           
+            margin-top: -100px;
+            button{
+                background: transparent;
+                font-size: 2rem;
+                color:var(--yellow-theme-main-color);
+                cursor: pointer;
+                border: 1.5px solid var(--yellow-theme-main-color);
+                padding: 10px 70px;
+                border-radius: 4px;
+                font-weight: 500;
+                margin-left: -400px;
+    
+                &:hover{
+                    background: var(--yellow-theme-main-color);
+                    color:#000000;
+                }
+            }
+        }
+    
+    }
+    
+}
+@media  only screen and (min-width:990px) and (max-width:1024px) {
+    .home{
+        position: relative;
+        color:white;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+       
+      
+        &_text-wrapper{
+            display: flex;
+            justify-content: center;
+        align-items: center;
+            position: absolute;
+            margin-top:-500px;
+          
+    
+        
+            h1{
+                color:var(--yellow-theme-main-color);
+                margin: 0 ;
+                position: relative;
+                line-height: 10rem;
+                font-weight: 500;
+                font-size: 8rem;
+                overflow: hidden;
+                white-space: nowrap;
+                animation: typingEffectAnimation 2.5s steps(30,end) ;
+              
+              
+    
+            }
+           
+           
+        }
+    
+        &__contact-me{
+            display: flex;
+          justify-content: center;
+           
+            margin-top: -100px;
+            button{
+                background: transparent;
+                font-size: 2rem;
+                color:var(--yellow-theme-main-color);
+                cursor: pointer;
+                border: 1.5px solid var(--yellow-theme-main-color);
+                padding: 10px 70px;
+                border-radius: 4px;
+                font-weight: 500;
+                margin-left: -400px;
+    
+                &:hover{
+                    background: var(--yellow-theme-main-color);
+                    color:#000000;
+                }
+            }
+        }
+    
     }
     
 }

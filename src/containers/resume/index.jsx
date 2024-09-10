@@ -69,7 +69,7 @@ const Resume = () => {
               data.education.map((item, i) => (
                 <VerticalTimelineElement
                   key={i}
-                  className='timeline__experience__vertical-timeline-element'
+                  className='timeline__education__vertical-timeline-element'
                   contentStyle={{background:'none',
                     color:'var( --yellow-theme-sub-text-color)',
                     border:'1.5px solid var( --yellow-theme-main-color)'
