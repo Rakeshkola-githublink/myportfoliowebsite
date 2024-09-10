@@ -25,7 +25,7 @@ const portfolioData = [
     id: 2,
     name: " Portfolio",
     image: imageThree,
-    link:"https://github.com/Rakeshkola-githublink/My-Portfolio"
+    link:"https://myportfoliowebsite-5ojt.onrender.com/portfolio"
   }
 
  
