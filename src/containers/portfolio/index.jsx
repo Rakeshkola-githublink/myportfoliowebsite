@@ -19,7 +19,7 @@ const portfolioData = [
     id: 2,
     name: "Food Delivery",
     image: imageTwo,
-    link:"https://github.com/Rakeshkola-githublink/Food-Delivery-website"
+    link:"https://foodorderdelivery-website.netlify.app/"
   },
   {
     id: 2,
