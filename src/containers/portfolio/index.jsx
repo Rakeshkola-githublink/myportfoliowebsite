@@ -13,7 +13,7 @@ const portfolioData = [
     id: 2,
     name: "Social Media",
     image: imageOne,
-    link:"https://github.com/Rakeshkola-githublink/Social-Media"
+    link:"https://onlinesocialmediawebsite.netlify.app/"
   },
   {
     id: 2,
