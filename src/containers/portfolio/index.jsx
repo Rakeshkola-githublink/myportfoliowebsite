@@ -28,7 +28,7 @@ const portfolioData = [
     name: " Portfolio",
     image: imageThree,
     link:"https://myportfoliowebsite-5ojt.onrender.com"
-  }
+  },
 
  {
     id: 2,
