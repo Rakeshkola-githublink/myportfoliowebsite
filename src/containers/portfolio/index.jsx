@@ -6,6 +6,7 @@ import { useState } from 'react'
 import imageOne from '../../images/Social Media website.png'
 import imageTwo from '../../images/Food Delivery website.png'
 import imageThree from '../../images/my portfolio.png'
+import imageFour from '../../images/moviesite.png'
 import './styles.scss'
 
 const portfolioData = [
@@ -31,8 +32,8 @@ const portfolioData = [
  {
     id: 2,
     name: " Movie website",
-    image: imageThree,
-    link:"https://myportfoliowebsite-5ojt.onrender.com"
+    image: imageFour,
+    link:"https://topmoviesrecommendation.onrender.com"
   }
   
    
