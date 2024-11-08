@@ -12,16 +12,17 @@ import './styles.scss'
 const portfolioData = [
   {
     id: 2,
-    name: "Social Media",
-    image: imageOne,
-    link:"https://onlinesocialmediawebsite.netlify.app/"
-  },
-  {
-    id: 2,
     name: "Food Delivery",
     image: imageTwo,
     link:"https://foodorderdelivery-website.netlify.app/"
   },
+  {
+    id: 2,
+    name: "Social Media",
+    image: imageOne,
+    link:"https://onlinesocialmediawebsite.netlify.app/"
+  },
+  
   {
     id: 2,
     name: " Portfolio",
