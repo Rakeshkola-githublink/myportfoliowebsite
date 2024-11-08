@@ -28,7 +28,12 @@ const portfolioData = [
     link:"https://myportfoliowebsite-5ojt.onrender.com"
   }
 
- 
+ {
+    id: 2,
+    name: " Movie website",
+    image: imageThree,
+    link:"https://myportfoliowebsite-5ojt.onrender.com"
+  }
   
    
 
