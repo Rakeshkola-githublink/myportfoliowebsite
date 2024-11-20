@@ -7,7 +7,7 @@ import imageOne from '../../images/Social Media website.png'
 import imageTwo from '../../images/Food Delivery website.png'
 import imageThree from '../../images/my portfolio.png'
 import imageFour from '../../images/moviesite.png'
-import imageFve from '../../images/habi tracker.png'
+import imageFve from '../../images/habit tracker.png'
 import './styles.scss'
 
 const portfolioData = [
