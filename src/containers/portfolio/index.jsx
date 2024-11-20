@@ -36,7 +36,7 @@ const portfolioData = [
     name: " Movie website",
     image: imageFour,
     link:"https://topmoviesrecommendation.onrender.com"
-  }
+  },
   {
     id: 2,
     name: " To-do  List",
